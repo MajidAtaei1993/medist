@@ -1,0 +1,147 @@
+.test {
+    object-fit: cover !important;
+    background-color: transparent !important;
+}
+
+.v-date-picker-table {
+    padding: 0 !important;
+}
+
+.v-date-picker-header {
+    padding: .5rem !important;
+}
+
+.medist-card-user-130-scroll {
+    max-height: 130px !important;
+    overflow: auto !important;
+}
+
+.medist-card-user-130-scroll::-webkit-scrollbar {
+    width: 8px;
+    position: absolute;
+}
+
+.medist-card-user-130-scroll::-webkit-scrollbar-thumb {
+    background: #474747;
+    width: 25px;
+    border-radius: 20px;
+}
+
+.medist-card-user-130-scroll::-webkit-scrollbar-track {
+    background: #d8d8d8;
+    border-radius: 20px;
+}
+
+.medist-notifs-scroll {
+    max-height: 550px !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+}
+
+.medist-notifs-scroll::-webkit-scrollbar {
+    width: 8px;
+    position: absolute;
+}
+
+.medist-notifs-scroll::-webkit-scrollbar-thumb {
+    background: #805add;
+    width: 25px;
+    border-radius: 20px;
+}
+
+.medist-notifs-scroll::-webkit-scrollbar-track {
+    background: #d7c6ff;
+    border-radius: 20px;
+}
+
+.medist-middle-panel-chevron-icon-user-chat {
+    margin-right: -15px;
+    margin-top: 2.5rem;
+    position: absolute;
+}
+
+.medist-user-data-table-fill-height tbody {
+    overflow-y: auto !important;
+    overflow-x: hidden;
+    min-height: 600px !important;
+    display: block !important;
+    background: white;
+    /* border-bottom-right-radius: 25px; */
+}
+
+.medist-chat-delivery-status {
+    position: relative;
+    top: 1rem;
+}
+
+
+/* tablet version */
+
+.medist-user-tablet-top-panel {
+    position: relative !important;
+    z-index: 3 !important;
+    background: #f6f6f6 !important;
+    border-bottom-left-radius: 35px !important;
+    border-bottom-right-radius: 35px !important;
+    border: none;
+    /* margin-top: -6rem;
+    padding-right: 6rem; */
+}
+
+.medist-user-tablet-bottom-panel {
+    background: #e2e2e2;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    margin-top: -5rem;
+    padding-top: 5rem !important;
+}
+
+.medist-table-expand {
+    background: #ede4ff !important;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+
+
+/* end tablet version */
+
+.validate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.validate .text {
+    font-size: 14px;
+    color: #474747;
+    font-weight: 400;
+    width: 100%;
+    text-align: right;
+    margin-bottom: 8px;
+}
+
+.validate .boxes {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.validate .boxes input {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border: 1px solid #979898;
+    background-color: white;
+    color: #474747;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

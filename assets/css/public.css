@@ -1,0 +1,1178 @@
+.medist-public-banner1 {
+    background: linear-gradient(to left, #ffffff 0%, #d3c6ff 100%);
+    min-height: 100%;
+    width: 100%;
+    margin-top: -6rem;
+    padding-top: 6rem;
+    min-height: 700px;
+    position: relative;
+    z-index: 0;
+}
+
+.medist-public-banner1 h1 {
+    font-size: 40px;
+    color: #805Add;
+}
+
+.medist-public-banner1 p {
+    font-size: 20px;
+    color: #805Add;
+}
+
+.medist-public-banner1 small {
+    font-size: 16px;
+    color: #805Add;
+}
+
+.medist-public-banner1::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-image: url('/assets/images/shape.png');
+    background-position: bottom left;
+    z-index: -1;
+    background-size: 100% 100%;
+}
+
+.medist-public-banner1::after {
+    position: absolute;
+    content: "";
+    background-image: url('../../static/assets/images/journals/DNA.png');
+    width: 337px;
+    height: 337px;
+    z-index: -1;
+    bottom: 0;
+    margin-right: -4.8rem;
+    margin-bottom: -4rem;
+}
+
+.medist-hidden-md-and-up {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-top: 1.5em;
+    min-width: 100%;
+}
+
+.test-img img {
+    flex-basis: 100% !important;
+    min-width: 650px;
+    position: relative;
+}
+
+@media screen and (max-width:767.9px) {
+    .medist-hidden-md-and-up {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .medist-hidden-md-and-up button {
+        max-width: 150px;
+    }
+    .medist-hidden-md-and-up button span {
+        font-size: 10px;
+    }
+    .test-img img {
+        position: relative;
+        flex-basis: 100% !important;
+        margin-right: -10rem;
+        margin-top: -8rem;
+        max-width: 400px !important;
+    }
+    .test-img {
+        object-fit: cover;
+    }
+}
+
+
+/* .medist-doctor-img .doctor-img::before {
+    position: absolute;
+    content: "";
+    background-image: url('../../static/assets/images/doctor.png');
+    min-width: 500px;
+    min-height: 500px;
+    top: 0;
+    right: 0;
+} */
+
+@media only screen and (max-width: 767.9px) {
+    .medist-public-banner1 h1,
+    p,
+    small {
+        text-align: center;
+    }
+    .medist-public-banner1 h1 {
+        font-size: 25px !important;
+        color: #805Add;
+    }
+    .medist-public-banner1 p {
+        font-size: 14px !important;
+        color: #805Add;
+    }
+    .medist-public-banner1 small {
+        font-size: 12px !important;
+        color: #805Add;
+    }
+    .medist-public-banner1::after {
+        display: inline;
+        position: absolute;
+        content: "";
+        background-image: url('../../static/assets/images/journals/sDNA.png');
+        left: 0;
+        top: 50%;
+        width: 144px;
+        height: 144px;
+        margin-left: -4rem;
+        margin-top: 3rem;
+        z-index: 99;
+        object-fit: cover;
+    }
+    .medist-public-banner1::before {
+        display: inline;
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 150px;
+        background-repeat: no-repeat;
+        background-image: url('/assets/images/shape.png');
+        background-position: bottom left;
+        z-index: -1;
+        background-size: 100% 100%;
+    }
+}
+
+.medist-responsive-dna::before {
+    position: absolute;
+    content: "";
+    background-image: url('../../static/assets/images/journals/DNA.png');
+    width: 100px;
+    height: 200px;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.medist-about {
+    position: relative;
+    box-shadow: 0px 2px 30px #e9e9e9;
+    border-radius: 35px;
+    line-height: 1.6;
+    margin: 0 .8rem !important;
+    justify-content: space-between;
+}
+
+.medist-about h2 {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.medist-about p {
+    font-size: 16px;
+    color: #979898;
+    margin-bottom: 1rem;
+}
+
+.medist-about::before {
+    position: absolute;
+    content: "";
+    width: 350px;
+    height: 350px;
+    bottom: 0;
+    right: 0;
+    background-image: url('../../static/assets/images/journals/DNA.png');
+}
+
+.medist-about-img {
+    object-fit: fill;
+}
+
+@media screen and (max-width:767.9px) {
+    .medist-about {
+        flex-direction: column-reverse;
+        position: relative;
+        overflow-x: hidden;
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 5rem 0 !important;
+    }
+    .medist-about h2,
+    p {
+        font-size: 14px;
+        text-align: justify;
+        display: inline-block;
+        max-width: 90%;
+    }
+    .medist-about img {
+        flex-basis: 100% !important;
+        min-width: 430px;
+        min-height: 300px;
+    }
+    .medist-about::before {
+        position: absolute;
+        content: "";
+        width: 165px;
+        height: 165px;
+        bottom: 0;
+        right: 0;
+        margin-right: -6rem;
+        margin-bottom: -2rem;
+        z-index: 0;
+        background-image: url('../../static/assets/images/journals/sDNA.png');
+    }
+    .medist-about-img {
+        object-fit: cover;
+        min-width: 400px;
+        margin-right: -2rem;
+        margin-bottom: -4rem;
+    }
+}
+
+.medist-public-guide {
+    position: relative;
+}
+
+.medist-public-guide::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    background-image: url('../../static/assets/images/Pills.png');
+    width: 160px;
+    height: 160px;
+    margin-top: -6rem;
+    margin-right: -2rem;
+}
+
+.medist-public-guide::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background-image: url('../../static/assets/images/Box.png');
+    width: 300px;
+    height: 300px;
+    margin-top: 6rem;
+    margin-left: -7rem;
+}
+
+.medist-resome-slider-active {
+    width: 33px;
+    height: 7px;
+    background: #805Add;
+    display: block;
+    position: relative;
+    border-radius: 5px;
+    margin-right: 3px;
+    transition: all .3s linear;
+}
+
+.medist-resome-slider {
+    width: 7px;
+    height: 7px;
+    display: block;
+    position: relative;
+    background: #c8c8c8;
+    margin: auto 3px;
+    border-radius: 100%;
+    transition: all .3s ease;
+}
+
+.medist-register-doctor-mobile {
+    position: relative
+}
+
+.medist-register-doctor-mobile::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 450px;
+    background-image: url('../../static/assets/images/auth/1.png');
+    margin-left: -5rem;
+    margin-top: -4rem;
+}
+
+.medist-public-banner1 h1 {
+    font-size: 40px;
+}
+
+.medist-public-banner1 p {
+    font-size: 20px;
+}
+
+.medist-public-banner1 small {
+    font-size: 16px;
+}
+
+.medist-banner1-background {
+    background-image: url('../../static/assets/images/doctor.png');
+    /* background: linear-gradient(to top, #e4dcfe 0%, #8b67e2 100%); */
+    /* background-color: rgba(128, 90, 221, .2); */
+    background-position: center;
+    /* border-radius: 50%; */
+    background-size: 100%;
+    position: relative;
+    width: 654px;
+    min-height: 460px;
+    display: flex;
+    justify-self: end;
+}
+
+.medist-heart::before {
+    content: "";
+    position: absolute;
+    background-image: url('../../static/assets/images/Heart.png');
+    width: 189px;
+    height: 189px;
+    top: 30%;
+    right: 10%;
+}
+
+
+/* expret knowledge */
+
+.medist-expret-text {
+    margin-right: 15px;
+    border-bottom: 3px solid #9f5ee3;
+    /* border-image: liner-geadient(to right, #9f5ee3 0%, #6857d9 100%) 10; */
+    line-height: 2;
+    color: black;
+}
+
+.medist-card-transition {
+    transition: all .5s ease-in-out !important;
+    transform: translateY(3%) !important;
+}
+
+.medist-card-transition:hover {
+    transition: all .5s ease-in-out !important;
+    transform: translateY(-3%) !important;
+}
+
+.medist-expert-card:hover {
+    filter: drop-shadow(0px 3px 30px #e9e9e9) !important;
+    transition: all .3s ease-in-out;
+}
+
+.medist-public-card-shadow {
+    filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, .05)) !important;
+}
+
+.medist-step-circle {
+    background: linear-gradient(to top, #6857d9 0%, #9f5ee3 100%);
+    width: 63px;
+    height: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    color: white;
+    z-index: 1;
+    position: relative;
+}
+
+.medist-step-circle1 {
+    background: linear-gradient(to top, #6857d9 0%, #9f5ee3 100%);
+    width: 63px;
+    height: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    color: white;
+    z-index: 1;
+    position: relative;
+}
+
+.medist-step-circle::after {
+    content: "";
+    background: linear-gradient(90deg, #6857d9, #6857d9 75%, transparent 75%, transparent 75%);
+    height: 4px;
+    width: 100%;
+    background-repeat: repeat;
+    background-size: 10px 4px;
+    min-width: 230px;
+    display: inline-block;
+    position: absolute;
+    right: 4.8rem;
+}
+
+@media screen and (min-width:1366.1px) {
+    .medist-step-circle::after {
+        min-width: 370px;
+    }
+}
+
+.medist-step-liner {
+    position: relative;
+}
+
+.medist-step-liner:not(:nth-child(4))::after {
+    position: absolute;
+    content: "";
+    overflow-y: hidden;
+    bottom: 0;
+    width: 4px;
+    min-height: 15px;
+    height: 15%;
+    background-image: linear-gradient(#6857d9 75%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-repeat: repeat-y;
+    background-size: 4px 20px;
+    margin-bottom: -3rem;
+}
+
+.medist-step-line {
+    /* border: none; */
+    border-top: 3px dotted #805Add;
+    background-color: #805Add;
+    height: 3px;
+    width: 100%;
+}
+
+.medist-steppers {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.medist-steppers>div {
+    display: flex;
+    width: 100%;
+    align-items: baseline;
+}
+
+.medist-steppers>div>ul:not(:nth-child(4)) {
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.minw-100 {
+    min-width: 100%;
+}
+
+.minh-100 {
+    min-height: 100%;
+}
+
+.maxw-100 {
+    max-width: 100%;
+}
+
+.maxh-100 {
+    max-height: 100%;
+}
+
+.medist-step-card {
+    /* position: absolute; */
+    width: 100%;
+}
+
+.medist-public-posts-btn {
+    background: linear-gradient(to left, #6857d9 70%, #9f5ee3 100%);
+}
+
+.medist-pill-img {
+    position: absolute;
+    right: -6rem;
+    bottom: 15rem;
+}
+
+.medist-box-img {
+    position: absolute;
+    left: -6rem;
+    bottom: -1rem;
+}
+
+.medist-dna-img {
+    position: absolute;
+    left: -16rem;
+    z-index: 0;
+    top: -8rem;
+}
+
+.medist-heart-img {
+    position: absolute;
+    left: -6rem;
+    top: 8rem;
+    z-index: 1;
+}
+
+.medist-about-dna-img {
+    position: absolute;
+    right: 0;
+}
+
+.medist-ribbon {
+    position: absolute;
+    border-radius: 35px;
+    top: 0;
+    left: 0;
+}
+
+.medist-ribbon span {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: -10px;
+    top: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+    overflow: hidden;
+}
+
+.medist-ribbon span::before {
+    position: absolute;
+    content: "ارائه نسخه الکترونیک";
+    width: 140%;
+    height: 40px;
+    background: red;
+    background: linear-gradient(to left, #6857d9 50%, #9f5ee3 100%);
+    transform: rotate(-45deg) translateY(-20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: white;
+}
+
+.medist-ribbon span::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    bottom: 0;
+    left: 0;
+    background: #9f5ee3;
+    z-index: -1;
+    box-shadow: 140px -140px #6857d9;
+}
+
+.medist-list-expert h1 {
+    font-size: 40px;
+    color: #805Add
+}
+
+.medist-list-expert small {
+    margin-top: 2.5rem;
+    font-size: 16px;
+    color: #805Add
+}
+
+@media screen and (max-width:767.9px) {
+    .medist-list-expert {
+        text-align: center;
+    }
+    .medist-list-expert h1 {
+        font-size: 25px !important;
+    }
+    .medist-list-expert small {
+        font-size: 12px !important;
+    }
+    .medist-list-expert img {
+        display: none !important;
+    }
+}
+
+.medist-pick-turn-data-table {
+    border-radius: 25px !important;
+}
+
+.medist-pick-turn-data-table thead tr {
+    display: inline-table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.medist-pick-turn-data-table thead tr th {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    background-color: #e2e2e2;
+}
+
+.medist-pick-turn-data-table thead tr th:first-child {
+    border-top-right-radius: 25px !important;
+}
+
+.medist-pick-turn-data-table thead tr th:last-child {
+    border-top-left-radius: 25px !important;
+}
+
+.medist-pick-turn-data-table tbody {
+    display: block;
+    width: 100%;
+    max-height: 250px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: .5rem 0 0 0 !important;
+}
+
+.medist-pick-turn-data-table tbody tr {
+    display: inline-table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.medist-pick-turn-data-table tbody::-webkit-scrollbar {
+    width: 8px;
+    position: absolute;
+}
+
+.medist-pick-turn-data-table tbody::-webkit-scrollbar-thumb {
+    background: #474747;
+    border-radius: 20px;
+}
+
+.medist-pick-turn-data-table tbody::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 20px;
+}
+
+.medist-boxshadow {
+    filter: drop-shadow(0px 3px 30px #e9e9e9) !important;
+}
+
+.medist-dropShadow {
+    filter: drop-shadow(0px 3px 30px #e9e9e9) !important;
+}
+
+.medist-card-dropShadow {
+    transition: all .3s ease-in-out;
+}
+
+.medist-card-dropShadow:hover {
+    filter: drop-shadow(0px 3px 30px #e9e9e9) !important;
+    transition: all .3s ease-in-out;
+}
+
+.medist-expert-banner-liner-gradiant img {
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+.medist-expert-banner-liner-gradiant h1 {
+    font-size: 40px;
+    color: #805Add;
+}
+
+.medist-expert-banner-liner-gradiant small {
+    font-size: 16px;
+    color: #805Add;
+}
+
+.medist-expert-banner-liner-gradiant {
+    background: linear-gradient(to left, #ffffff 20%, #ece6ff 100%) !important;
+    border-radius: 50px !important;
+}
+
+@media screen and (max-width:767.9px) {
+    .medist-expert-banner-liner-gradiant {
+        background: linear-gradient(to top, #fff 20%, #ece6ff 100%) !important;
+        border-radius: 50px 50px 0 0;
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+    .medist-expert-banner-liner-gradiant img {
+        flex-basis: 150% !important;
+        max-width: 100%;
+    }
+    .medist-expert-banner-liner-gradiant {
+        text-align: center;
+    }
+    .medist-expert-banner-liner-gradiant h1 {
+        font-size: 25px;
+        color: #805Add;
+    }
+    .medist-expert-banner-liner-gradiant small {
+        font-size: 12px;
+        color: #805Add;
+    }
+}
+
+.medist-expert-banner-liner-gradiant {
+    background: linear-gradient(to top, #ffffff 20%, #ece6ff 100%);
+    border-radius: 50px !important;
+}
+
+.medist-border-left {
+    border-left: 2px solid #e5e5e5;
+}
+
+
+/* .medist-search-relative-panel {
+    position: relative;
+    z-index: 1;
+    border-radius: 100px;
+    background: linear-gradient(to left, #ffffff 0%, #d3c6ff 100%);
+    color: #805Add;
+    max-height: auto;
+}
+
+.medist-search-relative-panel h1 {
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.medist-search-relative-panel p {
+    font-size: 16px;
+} */
+
+.medist-faq-tab {
+    color: #805Add;
+    border-bottom: 3px solid #805Add;
+    transition: border-bottom 1s linear;
+}
+
+.medist-faq-tab:hover {
+    color: #805Add;
+    transition: all .3s ease-in-out;
+}
+
+.medist-faq-tab-active {
+    width: 86px;
+    height: 30px;
+    background: #805Add;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    transition: all .3s linear;
+}
+
+.medist-tab-border {
+    border: 1px solid #805Add;
+    border-radius: 25px;
+}
+
+.medist-header-link:hover {
+    color: #6d0091 !important;
+}
+
+.medist-header-link {
+    color: #6d0091 !important;
+}
+
+.medist-drawer {
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+}
+
+.medist-login-left-panel {
+    background-image: url('../../static/assets/images/auth/Rectangle.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    border-radius: 40px;
+    margin-left: 1rem;
+}
+
+.medist-login-left-panel-imgs {
+    position: relative;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.medist-small-login-panel {
+    position: relative;
+}
+
+.medist-login-bgColor::before {
+    position: absolute;
+    content: "";
+    width: 424px;
+    height: 406px;
+    background-image: url('../../static/assets/images/auth/s3.png');
+    top: 0;
+    z-index: 0;
+    margin-top: -7.5rem;
+    margin-right: 5.5rem;
+}
+
+.medist-login-left-panel-imgs .img1 {
+    position: relative;
+    margin-right: -10rem;
+    min-width: 400px;
+}
+
+.medist-auth-input-text-left input {
+    text-align: left !important;
+    font-size: 12px;
+    margin-left: .5rem;
+}
+
+.medist-login-box-receive-code {
+    width: 70px;
+    height: 70px;
+    border: 1px solid #C8C8C8;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.medist-login-box-receive-code-small {
+    width: 43px;
+    height: 43px;
+    border: 1px solid #C8C8C8;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.medist-register-bg {
+    position: relative;
+}
+
+.medist-register-bg::before {
+    position: absolute;
+    content: "";
+    width: 404px;
+    height: 443px;
+    top: 0;
+    z-index: 0;
+    background-image: url('../../static/assets/images/auth/2.png');
+    margin-top: -8rem;
+}
+
+.medist-register-bg1 {
+    position: relative;
+}
+
+.medist-register-bg1::before {
+    position: absolute;
+    content: "";
+    width: 404px;
+    height: 443px;
+    top: 0;
+    z-index: 0;
+    background-image: url('../../static/assets/images/auth/1.png');
+    margin-top: -8rem;
+}
+
+.medist-register-upload-content {
+    height: 68px;
+    width: 100%;
+    border-radius: 30px;
+    border: 2px dashed #b49cef;
+}
+
+@media only screen and (max-width: 959.98px) {
+    .v-stepper:not(.v-stepper--vertical) .v-stepper__label {
+        display: inline !important;
+    }
+}
+
+.medist-chat-section {
+    background-color: rgba(128, 90, 221, .5) !important;
+    background-size: cover;
+    background-position: top left;
+    width: 100vw;
+    height: calc(100vh - 75px);
+    position: relative;
+    margin-top: -3rem;
+    z-index: 0;
+}
+
+.medist-chat-section::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    background-image: url('../../static/assets/images/chatBg.png');
+    background-size: 100% 100%;
+    background-position: top left;
+    width: 100%;
+    height: 100%;
+}
+
+.chat-bottom-chat-content {
+    position: absolute;
+    bottom: 0;
+    min-width: 100%;
+    height: 63px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 3;
+    padding: 0px .5rem 1rem .5rem;
+}
+
+.medist-chat-main-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+    padding-right: .5rem;
+    padding-left: .5rem;
+    z-index: 1;
+    line-height: 1.6;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+.medist-chat-main-section::-webkit-scrollbar {
+    width: 8px;
+    position: absolute;
+}
+
+.medist-chat-main-section::-webkit-scrollbar-thumb {
+    background: #b49cef;
+    width: 25px;
+    border-radius: 20px;
+}
+
+.medist-chat-main-section::-webkit-scrollbar-track {
+    background: #d8d8d8;
+    border-radius: 20px;
+}
+
+.medist-chat-main-section .recive-text {
+    display: flex;
+    background: white;
+    border-radius: 35px;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 48px;
+    min-width: 100px;
+    max-width: 245px;
+}
+
+.medist-chat-main-section .send-text {
+    display: flex;
+    background: #805Add;
+    border-radius: 35px;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 48px;
+    min-width: 100px;
+    max-width: 245px;
+}
+
+.medist-chat-main-section .recive-file {
+    display: flex;
+    background: white;
+    border-radius: 35px;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 48px;
+    min-width: 100px;
+    max-width: 245px;
+}
+
+.medist-chat-main-section .send-file {
+    display: flex;
+    background: #805Add;
+    border-radius: 35px;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 48px;
+    min-width: 100px;
+    max-width: 245px;
+}
+
+.medist-chat-main-section .recive-voice {
+    display: flex;
+    background: white;
+    border-radius: 35px;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 48px;
+    min-width: 100px;
+    max-width: 245px;
+}
+
+.medist-chat-main-section .send-voice {
+    display: flex;
+    background: #805Add;
+    border-radius: 35px;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 48px;
+    min-width: 100px;
+    max-width: 245px;
+}
+
+.recive-text {
+    display: flex;
+    margin-right: auto;
+    position: relative;
+    text-align: justify;
+}
+
+.recive-text p {
+    font-size: 12px;
+    margin: 0;
+    color: black;
+    text-align: right;
+}
+
+.recive-text small {
+    position: absolute;
+    font-size: 9px;
+    color: #979898;
+    bottom: 0;
+    right: 0;
+    margin-right: 1rem;
+    margin-top: .5rem;
+}
+
+.send-text {
+    display: flex;
+    margin-left: auto;
+    position: relative;
+    text-align: justify;
+}
+
+.send-text p {
+    font-size: 12px;
+    margin: 0;
+    color: white;
+    text-align: right;
+}
+
+.send-text small {
+    position: absolute;
+    font-size: 9px;
+    color: white;
+    bottom: 0;
+    left: 0;
+    margin-left: 1rem;
+    margin-top: .5rem;
+}
+
+.recive-file {
+    display: flex;
+    margin-right: auto;
+    position: relative;
+    text-align: justify;
+    padding: 0 auto !important;
+}
+
+.recive-file small {
+    position: absolute;
+    font-size: 9px;
+    color: #979898;
+    bottom: 0;
+    right: 0;
+    margin-right: 1rem;
+    margin-right: 2.5rem;
+}
+
+.recive-file .recive-file-detail {
+    text-align: left;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+.recive-file-detail .recive-file-name {
+    font-size: 12px;
+    margin: 0;
+    color: black;
+}
+
+.recive-file-detail .recive-file-size {
+    font-size: 12px;
+    margin: 0;
+    color: #979898;
+    margin: 0;
+}
+
+.send-file {
+    display: flex;
+    margin-left: auto;
+    position: relative;
+    text-align: justify;
+    padding: 0 auto !important;
+}
+
+.send-file small {
+    position: absolute;
+    font-size: 9px;
+    color: white;
+    bottom: 0;
+    left: 0;
+    margin-left: 2.5rem;
+}
+
+.send-file .send-file-detail {
+    text-align: left;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+.send-file-detail .send-file-name {
+    font-size: 12px;
+    margin: 0;
+    color: white;
+}
+
+.send-file-detail .send-file-size {
+    font-size: 12px;
+    margin: 0;
+    color: white;
+    margin: 0;
+}
+
+.send-voice {
+    display: flex;
+    margin-left: auto;
+    position: relative;
+    text-align: justify;
+    padding: 0 auto !important;
+}
+
+.recive-voice {
+    display: flex;
+    margin-right: auto;
+    position: relative;
+    text-align: justify;
+    padding: 0 auto !important;
+}
+
+.send-voice small {
+    position: absolute;
+    font-size: 9px;
+    color: white;
+    bottom: 0;
+    left: 0;
+    margin-left: 1rem;
+}
+
+.recive-voice small {
+    position: absolute;
+    font-size: 9px;
+    color: #979898;
+    bottom: 0;
+    right: 0;
+    margin-right: 1rem;
+}
+
+
+/* end expret knowledge */

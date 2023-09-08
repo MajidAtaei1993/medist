@@ -1,0 +1,2250 @@
+/* transition */
+
+.page-leave-active,
+.page-enter-active {
+    transition: opacity 0.3s;
+}
+
+.page-enter,
+.page-leave-to {
+    opacity: 0;
+}
+
+
+/* slide-right */
+
+.slide-up-enter-active,
+.slide-up-leave-active {
+    transition: all 0.3s ease-in-out;
+}
+
+.slide-up-enter,
+.slide-up-leave-to {
+    height: 0;
+    transform: translateY(30px);
+    opacity: 0;
+}
+
+.slide-right-leave-active,
+.slide-right-enter-active {
+    transition: all 0.3s;
+}
+
+.slide-right-enter {
+    opacity: 0;
+    transform: translate(-30px, 0);
+}
+
+.slide-right-enter-to,
+.slide-right-leave {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.slide-right-leave-to {
+    opacity: 0;
+    transform: translate(30px, 0);
+}
+
+
+/* slide-left */
+
+.slide-left-leave-active,
+.slide-left-enter-active {
+    transition: all 0.3s;
+}
+
+.slide-left-enter {
+    opacity: 0;
+    transform: translate(30px, 0);
+}
+
+.slide-left-enter-to,
+.slide-left-leave {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.slide-left-leave-to {
+    opacity: 0;
+    transform: translate(-30px, 0);
+}
+
+
+/* swipe-right */
+
+.swipe-right-leave-active,
+.swipe-right-enter-active {
+    transition: all 0.3s;
+}
+
+.swipe-right-enter {
+    opacity: 0;
+    transform: translate(-100%, 0);
+}
+
+.swipe-right-enter-to,
+.swipe-right-leave {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.swipe-right-leave-to {
+    opacity: 0;
+    transform: translate(100%, 0);
+}
+
+
+/* jump */
+
+.jump-leave-active,
+.jump-enter-active {
+    transition: all 0.3s;
+}
+
+.jump-enter {
+    opacity: 0;
+    transform: rotate(-12deg);
+}
+
+.jump-enter-to,
+.jump-leave {
+    opacity: 1;
+    transform: rotate(0deg);
+}
+
+.jump-leave-to {
+    opacity: 0;
+    transform: rotate(12deg);
+}
+
+
+/* end transition */
+
+
+/* * {
+    scrollbar-color: #474747 #979898;
+    scrollbar-width: 7px;
+} */
+
+::-webkit-scrollbar {
+    position: absolute;
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #474747;
+    border-radius: 22px;
+    -webkit-border-radius: 22px
+}
+
+::-webkit-scrollbar-track {
+    background-color: #979898;
+    border-radius: 22px;
+}
+
+
+/* Font section */
+
+.btn-gradiant {
+    background: linear-gradient(to bottom, #6857d9, #9f5ee3) !important;
+    filter: drop-shadow(0px 3px 7px rgb(0 0 0 / 18%)) !important;
+    border-radius: 25px;
+}
+
+.btn-gradiant span {
+    color: white;
+    font-size: 14px;
+}
+
+.font-normal {
+    font-size: 12px !important;
+    font-weight: 500 !important;
+}
+
+.font-small {
+    font-size: 10px !important;
+}
+
+.font-dashboard-main {
+    font-size: 14px !important;
+    font-weight: bold !important;
+}
+
+.font-dashboard {
+    font-size: 12px !important;
+}
+
+.font-nav {
+    font-size: 12px !important;
+    font-weight: normal;
+    color: black !important;
+    transition: all ease-in-out .3s;
+}
+
+.font-nav:hover {
+    color: #d51414 !important;
+    transition: all ease-in-out .3s;
+}
+
+.font-type {
+    font-size: 14px !important;
+    font-weight: normal;
+}
+
+.overflow-x {
+    overflow-x: hidden !important;
+}
+
+.overflow-y {
+    overflow-y: hidden !important;
+}
+
+.position-unset {
+    position: unset !important;
+}
+
+.position-relative {
+    position: relative !important;
+}
+
+.position-absolute {
+    position: absolute !important;
+}
+
+.position-sticky {
+    position: sticky !important;
+}
+
+.medist-avatar-shadow {
+    filter: drop-shadow(0 10px 7px #a1a1a1);
+}
+
+.medist-card-scroll {
+    max-height: 200px !important;
+    overflow: auto !important;
+    padding-left: 1rem;
+}
+
+.medist-card-scroll::-webkit-scrollbar {
+    width: 8px;
+    position: absolute;
+}
+
+.medist-card-scroll::-webkit-scrollbar-thumb {
+    background: #805add;
+    width: 25px;
+    border-radius: 20px;
+}
+
+.medist-card-scroll::-webkit-scrollbar-track {
+    background: #d8c8ff;
+    border-radius: 20px;
+}
+
+.medist-card-scroll-100-card {
+    max-height: 100px !important;
+    overflow: auto !important;
+    padding-left: 1rem;
+}
+
+.medist-card-scroll-100-card::-webkit-scrollbar {
+    width: 8px;
+    position: absolute;
+}
+
+.medist-card-scroll-100-card::-webkit-scrollbar-thumb {
+    background: #474747;
+    width: 25px;
+    border-radius: 20px;
+}
+
+.medist-card-scroll-100-card::-webkit-scrollbar-track {
+    background: #d8d8d8;
+    border-radius: 20px;
+}
+
+.medist-card-scroll-150-card {
+    max-height: 150px !important;
+    overflow: auto !important;
+    padding-left: 1rem;
+}
+
+.medist-card-scroll-150-card::-webkit-scrollbar {
+    width: 8px;
+    position: absolute;
+}
+
+.medist-card-scroll-150-card::-webkit-scrollbar-thumb {
+    background: #474747;
+    width: 25px;
+    border-radius: 20px;
+}
+
+.medist-card-scroll-150-card::-webkit-scrollbar-track {
+    background: #d8d8d8;
+    border-radius: 20px;
+}
+
+.medist-card-scroll-200-card {
+    max-height: 200px !important;
+    overflow: auto !important;
+    padding-left: 1rem;
+}
+
+.medist-card-scroll-200-card::-webkit-scrollbar {
+    width: 8px;
+    position: absolute;
+}
+
+.medist-card-scroll-200-card::-webkit-scrollbar-thumb {
+    background: #474747;
+    width: 25px;
+    border-radius: 20px;
+}
+
+.medist-card-scroll-200-card::-webkit-scrollbar-track {
+    background: #d8d8d8;
+    border-radius: 20px;
+}
+
+.medist-box-shadow {
+    box-shadow: rgba(0, 0, 0, .011) 0px 22px 35px 4px !important;
+}
+
+.medist-icon {
+    transition: all ease-in-out .3s !important;
+}
+
+.medist-icon:hover {
+    transition: all ease-in-out .3s !important;
+    color: #835ADE !important;
+}
+
+.medist-header {
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, .11) 0px 22px 70px 4px !important;
+}
+
+.medist-footer {
+    background-color: white;
+    filter: drop-shadow(0px -16px 15px #e5e5e5) !important;
+    border-top-left-radius: 100px !important;
+    border-top-right-radius: 100px !important;
+    min-width: 100%;
+}
+
+.medist-footer-permision {
+    color: #805add;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.medist-link {
+    color: #bbbbbb !important;
+    transition: all ease-in-out .3s;
+    font-size: 12px !important;
+}
+
+.medist-link:hover {
+    transition: all ease-in-out .3s !important;
+    color: #d51414 !important;
+}
+
+.medist-menu-link {
+    color: black !important;
+    font-size: 12px;
+    transition: all ease-in-out .3s;
+}
+
+.medist-menu-link:hover {
+    color: #d51414 !important;
+    transition: all ease-in-out .3s;
+}
+
+.medist-active-btn {
+    color: #d51414 !important;
+}
+
+.medist-middle-card {
+    z-index: 1 !important;
+    background-color: #f6f6f6 !important;
+    border-radius: 25px;
+    position: relative;
+}
+
+.medist-middle-panel-chevron-icon-profile {
+    margin-right: -25px;
+    margin-top: 9.8rem;
+    position: absolute;
+}
+
+.medist-middle-panel-chevron-icon-dashboard {
+    margin-right: -27px;
+    margin-top: 9rem;
+    position: absolute;
+}
+
+.medist-middle-panel-chevron-icon-transaction {
+    margin-right: -27px;
+    margin-top: 3.5rem;
+    position: absolute;
+    z-index: -1;
+}
+
+.medist-middle-panel-chevron-icon-all-turn {
+    margin-right: -15px;
+    margin-top: 7.5rem;
+    position: absolute;
+}
+
+.medist-middle-panel-chevron-icon-set-turn-time {
+    margin-right: -15px;
+    margin-top: 2rem;
+    position: absolute;
+}
+
+.medist-middle-panel-chevron-icon-request {
+    margin-right: -15px;
+    margin-top: 5rem;
+    position: absolute;
+}
+
+.medist-left-card {
+    background-color: #e2e2e2 !important;
+    margin-right: -2rem !important;
+    padding-right: 2rem;
+}
+
+.medist-left-panel-white-card {
+    border-radius: 15px;
+    background-color: white;
+}
+
+.medist-right-card {
+    /* background-color: #f4eeff !important; */
+    margin-left: -.5rem;
+    position: fixed !important;
+    /* width: 100%; */
+}
+
+.medist-edit-btn-border {
+    border: 3px solid #7e5adb !important;
+}
+
+.medist-panel-avatar {
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, .1);
+    -webkit-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, .1);
+}
+
+textarea::-webkit-scrollbar {
+    width: 2px;
+    position: absolute !important;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background: transparent !important;
+}
+
+textarea::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+@media screen and (min-width:768px) and (max-width:1023.9px) {
+    textarea {
+        max-height: unset !important;
+    }
+}
+
+.medist-panel-badge {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -1rem;
+    margin-right: -1.9rem;
+    background-color: #f8f5ff;
+    color: #7e5adb;
+    font-size: 10px;
+    padding-left: 2px;
+    padding-top: 2px;
+}
+
+.medist-header-badge {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -1rem;
+    margin-right: -1.9rem;
+    background: linear-gradient(180deg, rgba(214, 196, 253, 1) 61%, rgba(175, 146, 243, 1) 100%) !important;
+    color: #f8f5ff;
+    font-size: 10px;
+    text-align: center;
+    padding-top: 2px;
+}
+
+.medist-panel-right-badge {
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    color: white;
+    background-color: #835ADE;
+    padding: 3px 5px 3px 5px;
+    margin-right: .5rem;
+    font-size: 10px;
+    position: absolute;
+}
+
+.medist-input-text-center input {
+    text-align: center !important;
+    color: #979898 !important;
+    font-size: 12px;
+}
+
+.medist-input-text-left input {
+    text-align: left !important;
+    color: #979898 !important;
+    font-size: 12px;
+}
+
+.medist-input-text-right input {
+    text-align: right !important;
+    color: #979898 !important;
+    font-size: 12px;
+}
+
+
+/* .input {
+    color: #979898;
+    background-color: white;
+    width: auto;
+    margin-left: 2rem;
+} */
+
+.input:focus {
+    outline: none;
+}
+
+.medist-input {
+    color: #979898;
+    background-color: white;
+    width: 50%;
+    height: auto;
+}
+
+.medist-input:focus {
+    outline: none;
+}
+
+.medist-file-input {
+    color: #979898 !important;
+    width: 50% !important;
+    float: left !important;
+}
+
+.medist-counter-card {
+    background-color: #ffffff;
+    width: 95px;
+    height: 80px;
+    margin: 1rem;
+    font-size: 12px;
+}
+
+.medist-footer-desc {
+    color: #979898;
+    font-size: 14px;
+}
+
+.medist-footer-ul {
+    font-size: 18px;
+    font-weight: bold;
+    color: #474747 !important;
+}
+
+.medist-footer-li {
+    color: #979898 !important;
+    font-size: 14px;
+    font-weight: normal;
+    transition: all .3s ease-in-out !important;
+}
+
+.medist-footer-li:hover {
+    color: #835ADE !important;
+    transition: all .3s ease-in-out !important;
+    cursor: pointer;
+}
+
+.medist-search {
+    box-shadow: .1px .1px 30px .1px #f1f1f1;
+    -webkit-box-shadow: .1px .1px 15px .1px #f1f1f1;
+}
+
+.medist-footer-search {
+    border: 1px solid #546e7a;
+    border-radius: 0px 10px 10px 0px;
+    width: 100%;
+    padding: 14px;
+    font-size: 12px;
+    margin-left: 0;
+}
+
+.medist-footer-search:focus {
+    outline: none;
+}
+
+.medist-input-search-btn {
+    position: relative;
+    text-align: center;
+    height: 51px;
+    cursor: pointer;
+    border-radius: 0px 0px 0px 10px;
+    font-size: 12px;
+    color: white;
+    background: linear-gradient(180deg, #6857d9 31%, #9f5ee3);
+}
+
+.medist-middle-panel-header {
+    min-width: auto;
+}
+
+.medist-calendar {
+    background: transparent !important;
+}
+
+.medist-active-tab {
+    background-color: transparent !important;
+    color: #835ADE !important;
+}
+
+.medist-middle-panel-request-send {
+    border-radius: 50px;
+    background: #f6f6f6;
+}
+
+
+/* span.v-btn__content {
+    font-size: 14px;
+} */
+
+.v-calendar-weekly__week {
+    background-color: transparent !important;
+    height: 100px !important;
+}
+
+.v-calendar-daily__body {
+    display: none !important;
+}
+
+.v-calendar-daily__intervals-head {
+    display: none !important;
+}
+
+.v-calendar-weekly {
+    border: none !important;
+}
+
+.v-calendar-daily_head-weekday {
+    font-size: 10px !important;
+    position: relative !important;
+    display: flexbox !important;
+    margin: .3rem auto !important;
+}
+
+.v-calendar-daily {
+    border: none !important;
+}
+
+.v-calendar-daily__intervals-head {
+    display: none !important;
+}
+
+.v-calendar-daily .v-calendar-daily_head-day {
+    border: none !important;
+}
+
+.v-btn--fab.v-size--default {
+    height: 40px !important;
+    width: 40px !important;
+}
+
+.v-calendar-daily_head-day:not(.v-future, .v-past)::before {
+    content: "";
+    position: absolute !important;
+    background: #474747 !important;
+    z-index: 0 !important;
+    width: 100%;
+    height: 100%;
+    z-index: 0 !important;
+    border-radius: 30px;
+}
+
+.v-present .v-calendar-daily_head-weekday {
+    color: white !important;
+}
+
+.v-present .v-calendar-daily_head-weekday .v-calendar-daily_head-day-label .v-btn.v-btn--has-bg {
+    display: none !important;
+}
+
+.v-present .v-calendar-daily_head-day-label .v-btn.v-btn--has-bg {
+    background-color: transparent !important;
+}
+
+.v-present .v-calendar-daily_head-day-label .v-btn.v-btn--has-bg span {
+    color: white !important;
+}
+
+@media screen and (min-device-width: 1366.1px) {
+    .v-calendar-daily_head-day:not(.v-future, .v-past)::before {
+        width: 80%;
+        height: 100%;
+        margin-right: 6.5px;
+    }
+}
+
+@media screen and (min-device-width: 1024px) and (max-device-width:1366px) {
+    .v-calendar-daily_head-day:not(.v-future, .v-past)::before {
+        width: 100%;
+        height: 100%;
+        margin-right: 0px;
+    }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width:1023.9px) {
+    .v-calendar-daily_head-day:not(.v-future, .v-past)::before {
+        width: 60%;
+        height: 100%;
+        margin-right: 18px;
+    }
+}
+
+@media screen and (max-device-width:767.9px) {
+    .v-calendar-daily_head-day:not(.v-future, .v-past)::before {
+        width: 90%;
+        height: 100%;
+        margin-right: 3px;
+    }
+}
+
+.v-calendar-daily_head-weekday .v-btn {
+    font-size: 10px !important;
+    text-transform: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: rgba(0, 0, 0, .00001) !important;
+}
+
+
+/* .v-calendar-weekly__day-label .v-btn::before {
+    background-color: white !important;
+    border-radius: none !important;
+    bottom: 0;
+    color: inherit;
+    content: "";
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.6, 1);
+} */
+
+.theme--light.v-calendar-weekly .v-calendar-weekly__head-weekday {
+    border-right: none !important;
+    color: #000000;
+}
+
+.theme--light.v-calendar-weekly .v-calendar-weekly__day {
+    border: none !important;
+    color: #000000;
+}
+
+.v-calendar-weekly .v-calendar-weekly__head-weekday.v-outside {
+    background-color: transparent !important;
+    font-size: 9px !important;
+}
+
+.v-calendar-weekly .v-calendar-weekly__day {
+    background-color: transparent !important;
+    z-index: 2 !important;
+}
+
+.v-calendar-weekly .v-calendar-weekly__head-weekday:not(.v-outside) {
+    z-index: 2 !important;
+}
+
+.v-calendar-weekly .v-calendar-weekly__head-weekday:not(.v-outside)::before {
+    content: "";
+    position: absolute !important;
+    background: white !important;
+    z-index: -1 !important;
+    width: 45px;
+    height: 70px;
+    display: flex;
+    margin-top: -.55rem;
+    margin-right: .1rem;
+    border-radius: 25px;
+}
+
+.v-textarea.v-text-field--enclosed .v-text-field__slot textarea {
+    color: #979898 !important;
+}
+
+.medist-rounded {
+    border-radius: 35px !important;
+}
+
+.medist-cursor-pointer {
+    cursor: pointer;
+}
+
+.medist-dialog-btn-zindex {
+    z-index: 99 !important;
+}
+
+.v-dialog {
+    z-index: 99 !important;
+    box-shadow: none !important;
+}
+
+.v-text-field.v-text-field--solo:not(.v-text-field--solo-flat)>.v-input__control>.v-input__slot {
+    box-shadow: none !important;
+    filter: drop-shadow(0px 3px 7px rgba(0, 0, 0, .2)) !important;
+}
+
+.medist-chat-scroll {
+    max-height: 500px;
+    overflow-y: auto;
+    overflow-x: hidden !important;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.medist-chat-scroll-mobile {
+    max-height: calc(100vh - 115px) !important;
+    overflow-y: auto;
+    overflow-x: hidden !important;
+}
+
+.medist-chat-scroll::-webkit-scrollbar {
+    width: 8px;
+    position: absolute;
+}
+
+.medist-chat-scroll::-webkit-scrollbar-thumb {
+    background: #805add;
+    width: 25px;
+    border-radius: 20px;
+}
+
+.medist-chat-scroll::-webkit-scrollbar-track {
+    background: #d8c8ff;
+    border-radius: 20px;
+}
+
+.medist-chat-scroll-mobile::-webkit-scrollbar {
+    width: 8px;
+    position: absolute;
+}
+
+.medist-chat-scroll-mobile::-webkit-scrollbar-thumb {
+    background: #805add;
+    width: 25px;
+    border-radius: 20px;
+}
+
+.medist-chat-scroll-mobile::-webkit-scrollbar-track {
+    background: #d8c8ff;
+    border-radius: 20px;
+}
+
+.medist-chat-box-primary {
+    border-radius: 25px;
+    background-color: #805add;
+    max-width: 400px !important;
+    min-width: 80px !important;
+    max-height: auto;
+    color: white;
+}
+
+.medist-chat-date-time-font {
+    font-size: 9px !important;
+}
+
+.medist-chat-box-info {
+    border-radius: 35px !important;
+    background-color: #dedede;
+    max-width: 400px !important;
+    min-width: 80px !important;
+    color: black;
+    text-align: justify;
+}
+
+.medist-chat-request {
+    position: relative;
+    overflow: hidden;
+}
+
+.medist-chat-request .action {
+    width: 100%;
+}
+
+.medist-chat-request .action .content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.medist-chat-request .action .content .send {
+    margin-bottom: -8px;
+}
+
+.medist-chat-request .action .content .index {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0px 3px 7px rgb(0 0 0 / 18%);
+    border-radius: 38px;
+    height: 75px;
+    padding: 0 2%;
+}
+
+.medist-chat-request .action .content .index input {
+    font-size: 16px;
+    color: #474747;
+}
+
+.medist-chat-request .action .content .index img {
+    cursor: pointer;
+}
+
+.medist-chat-request .action .content .disactive-btn {
+    width: 174px;
+    height: 76px;
+    background-color: #ff7272;
+    border-radius: 38px;
+    margin-right: 12px;
+}
+
+.medist-chat-request .action .content .disactive-btn span {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+.medist-chat-request-content {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: calc(100vh - 40vh);
+}
+
+.medist-chat-request-content::-webkit-scrollbar {
+    position: absolute;
+    width: 9px;
+}
+
+.medist-chat-request-content::-webkit-scrollbar-thumb {
+    background-color: #805add;
+    border-radius: 6px;
+}
+
+.medist-chat-request-content::-webkit-scrollbar-track {
+    background-color: #d8c8ff;
+    border-radius: 6px;
+}
+
+.medist-chat-request-bottom-content {
+    position: relative;
+    bottom: 0;
+}
+
+@media screen and (min-device-width:768px) and (max-device-width:1023.9px) {
+    .medist-chat-request .action .content .disactive-btn {
+        width: 157px;
+        background-color: #ff2929;
+    }
+    .medist-chat-request .action .content .disactive-btn span {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-device-width:767.9px) {
+    .medist-chat-request .action .content .disactive-btn {
+        width: 100%;
+        background-color: #ff2929;
+        height: 62px;
+        margin: 8px auto;
+    }
+    .medist-chat-request .action .content .disactive-btn span {
+        font-size: 12px;
+    }
+    .medist-chat-request .action .content {
+        flex-wrap: wrap;
+    }
+    .medist-chat-request .action .content .send {
+        width: 25%;
+    }
+    .medist-chat-request .action .content .index {
+        width: calc(100% - 25%);
+        height: 63px;
+    }
+    .medist-chat-request .action .content .index input {
+        font-size: 14px;
+    }
+    .medist-chat-request .action .content .index img {
+        width: 22px;
+        height: 22px;
+        margin-left: 2px;
+    }
+}
+
+
+/* request new */
+
+.medist-width-100 {
+    width: 100%;
+}
+
+.medist-upload-attach-btn {
+    background: linear-gradient(180deg, #6857d9 0%, #9f5ee3 100%) !important;
+    font-size: 14px !important;
+    color: white !important;
+}
+
+.medist-upload-place {
+    background: #f7f3ff;
+    border: 3px dashed #805add;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    min-height: 245px;
+    min-width: auto;
+}
+
+.medist-upload-detail-color {
+    color: #bb9fff;
+    font-size: 14px;
+}
+
+.medist-upload-list-scroll {
+    max-height: 250px !important;
+    overflow: auto !important;
+}
+
+.medist-upload-list-scroll::-webkit-scrollbar {
+    width: 8px;
+    position: absolute;
+}
+
+.medist-upload-list-scroll::-webkit-scrollbar-thumb {
+    background: #805add;
+    width: 25px;
+    border-radius: 20px;
+}
+
+.medist-upload-list-scroll::-webkit-scrollbar-track {
+    background: #d8c8ff;
+    border-radius: 20px;
+}
+
+@media screen and (max-width:767.9px) {
+    .medist-upload-place {}
+}
+
+
+/* end request new */
+
+.v-list-group--active>.v-list-group__header>.v-list-group__header__append-icon .v-icon {
+    transform: rotate(-90deg) !important;
+}
+
+.v-list-item__icon:last-of-type:not(:only-child) {
+    margin-left: 0 !important;
+}
+
+.v-stepper .v-stepper__step__step {
+    color: transparent !important;
+}
+
+
+/* set turn and time */
+
+.v-stepper__header {
+    height: auto !important;
+    box-shadow: none !important;
+}
+
+.v-stepper .v-stepper__label {
+    font-size: 12px !important;
+    padding-right: .5rem !important;
+    color: #835ADE !important;
+}
+
+.v-stepper {
+    background: #f6f6f6 !important;
+}
+
+.medist-stepper-linear {
+    padding: 1.5px;
+    background-color: #979898;
+}
+
+.v-input--selection-controls .v-input__slot>.v-label {
+    font-size: 12px !important;
+    /* color: #835ADE !important; */
+}
+
+.mdi-checkbox-blank-outline::before {
+    content: "" !important;
+    width: 16px;
+    height: 16px;
+    background-color: #e2e2e2 !important;
+    border-radius: 5px !important;
+}
+
+.mdi-checkbox-marked {
+    background: #10be79 !important;
+    border-radius: 5px !important;
+    top: 4px;
+    right: 4px;
+    width: 16px !important;
+    height: 16px !important;
+    position: relative;
+}
+
+.mdi-checkbox-marked::before {
+    content: "\1f5f8" !important;
+    position: relative;
+    color: white;
+    font-size: 16px;
+}
+
+
+/* .checkmark::before {
+    top: 4px;
+    left: 2.5px;
+    width: 9.5px;
+    height: 6.5px;
+    border: solid white;
+    border-width: 0 0 2px 2px;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    z-index: 9999;
+    position: absolute;
+} */
+
+
+/* .v-picker__title {
+    display: none !important;
+} */
+
+
+/* .v-date-picker-title__year {
+    display: none !important;
+}
+
+.v-date-picker-title {
+    display: none !important;
+} */
+
+.v-picker--flat {
+    box-shadow: none !important;
+}
+
+.v-date-picker-table {
+    /* border-radius: 25px !important; */
+    background: transparent !important;
+}
+
+.v-sheet.v-card:not(.v-sheet--outlined) {
+    box-shadow: none !important;
+}
+
+.v-date-picker-header {
+    padding: 1rem 2.5rem !important;
+}
+
+
+/* .v-picker__body {
+    border-radius: 25px !important;
+} */
+
+.medist-begin-time-picker {
+    border-radius: 50px;
+    background: white;
+    /* width: 337px;
+    height: 200px; */
+}
+
+.medist-end-time-picker {
+    border-radius: 50px;
+    background: white;
+    /* width: 337px !important;
+    height: 200px !important; */
+}
+
+.v-time-picker-clock__item {
+    font-size: 10px !important;
+    width: 22px !important;
+    height: 22px !important;
+}
+
+.medist-clock {
+    background: white;
+    border-radius: 35px;
+}
+
+.v-picker {
+    border-radius: 38px !important;
+}
+
+.v-sheet.v-stepper:not(.v-sheet--outlined) {
+    box-shadow: none !important;
+}
+
+.v-time-picker-clock__inner {
+    bottom: 17px !important;
+    left: 17px !important;
+    right: 17px !important;
+    top: 17px !important;
+}
+
+
+/* .theme--light.v-time-picker-clock {
+    background: #e0e0e0;
+} */
+
+
+/* .v-time-picker-clock {
+    padding: 0 !important;
+    width: 130px !important;
+}
+
+.v-time-picker-clock__container {
+    flex-basis: 150px !important;
+} */
+
+.v-stepper__label {
+    transform: translate(10%, -150%) !important;
+    position: absolute !important;
+}
+
+.medist-time-selected-circle-primary {
+    width: 90px !important;
+    height: 30px !important;
+    background-color: #835ADE;
+    border-radius: 50%;
+    color: white;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+}
+
+.medist-time-selected-circle-accent {
+    width: 46px;
+    height: 46px;
+    background: #e2e2e2;
+    border-radius: 50%;
+    color: #474747;
+}
+
+.medist-width {
+    width: 50px !important;
+    padding: 0 !important;
+}
+
+.medit-time-couter {
+    background: white;
+    border-radius: 25px;
+}
+
+.medist-counter-background {
+    background: #e2e2e2;
+    border-radius: 25px;
+}
+
+.medist-timer-chip-primary {
+    background: #835ADE;
+    color: white;
+    width: 46px;
+    height: 46px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.medist-timer-chip-accent {
+    background: #e2e2e2;
+    width: 46px;
+    height: 46px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.medist-timer-chip-primary:focus {
+    outline: none;
+}
+
+.medist-ampm-btn {
+    font-size: 7px !important;
+}
+
+.medist-timer-chip-accent:focus {
+    outline: none;
+}
+
+.v-chip .v-chip__close.v-icon {
+    font-size: 18px;
+    max-height: 18px;
+    max-width: 18px !important;
+    margin-right: 1rem !important;
+    padding-left: 0 !important;
+}
+
+.v-menu__content {
+    border-radius: 20px !important;
+    margin-top: .3rem;
+    box-shadow: 0 3px 7px #e2e2e2 !important;
+}
+
+.v-menu__content::-webkit-scrollbar {
+    width: 8px;
+    position: absolute;
+}
+
+.v-menu__content::-webkit-scrollbar-thumb {
+    background: #474747;
+    border-radius: 20px;
+}
+
+.v-menu__content::-webkit-scrollbar-track {
+    background: #e2e2e2;
+    border-radius: 20px;
+}
+
+
+/* .data-table table {
+    background: #f6f6f6 !important;
+} */
+
+.data-table thead {
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+
+/* .data-table thead tr th:last-child {
+    border-radius: 25px 0 0 0;
+} */
+
+.data-table tbody tr:last-child {
+    border-bottom-right-radius: 0 !important;
+    /* border-bottom-left-radius: 25px !important; */
+}
+
+
+/* .data-table tbody tr {
+    margin-left: 2rem !important;
+} */
+
+.data-table thead {
+    background: #835ADE;
+    display: block !important;
+}
+
+.data-table tbody {
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    max-height: 480px;
+    display: block !important;
+    background: white;
+    margin: .5rem 0 0 0 !important;
+}
+
+.data-table-fill-height tbody {
+    overflow: auto !important;
+    max-height: 550px !important;
+    display: block !important;
+    background: white;
+}
+
+.data-table tbody tr:nth-child(2n) {
+    background: #eeeeee;
+}
+
+.data-table tbody tr {
+    height: 1rem;
+}
+
+.data-table tbody::-webkit-scrollbar {
+    width: 8px;
+    position: absolute;
+}
+
+.data-table tbody::-webkit-scrollbar-thumb {
+    background: #805add;
+    border-radius: 20px;
+}
+
+.data-table tbody::-webkit-scrollbar-track {
+    background: #d8c8ff;
+    border-radius: 20px;
+}
+
+
+/* .data-table thead tr {
+    display: block;
+} */
+
+.data-table thead tr {
+    display: inline-flex;
+    table-layout: fixed;
+    width: 100%;
+    /* justify-content: space-around !important; */
+}
+
+.data-table tbody tr {
+    display: inline-table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.data-table thead tr th {
+    display: flexbox !important;
+    table-layout: fixed;
+    width: 100%;
+    font-size: 10px !important;
+    font-weight: normal;
+}
+
+.data-table tbody tr td {
+    display: flexbox;
+    table-layout: fixed;
+    width: 100%;
+    font-size: 12px !important;
+}
+
+.data-table-first-col tbody tr td:first-child {
+    width: 5% !important;
+}
+
+.data-table-first-col tbody tr td:nth-child(1),
+.data-table-first-col thead tr th:nth-child(1) {
+    width: 20% !important;
+}
+
+.data-table thead tr th {
+    margin-top: 1rem;
+    color: white !important;
+}
+
+.medist-incount-card {
+    width: 103px;
+    height: 103px;
+    background: white;
+    border-radius: 50px;
+    align-items: center !important;
+}
+
+.menu {
+    position: relative;
+    right: 0;
+}
+
+.menu1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.medist-active-stepper::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: .45rem;
+}
+
+
+/* end set turn and time */
+
+
+/* chat section */
+
+.medist-chat-list-scroll {
+    max-height: 510px !important;
+    overflow-y: auto !important;
+    overflow-x: hidden;
+}
+
+.medist-chat-list-scroll-small {
+    max-height: calc(100vh - 115px) !important;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.medist-chat-list-scroll::-webkit-scrollbar {
+    width: 8px;
+    position: absolute;
+}
+
+.medist-chat-list-scroll::-webkit-scrollbar-thumb {
+    background: #474747;
+    border-radius: 20px;
+}
+
+.medist-chat-list-scroll::-webkit-scrollbar-track {
+    background: #D8D8D8;
+    border-radius: 20px;
+}
+
+.medist-chat-list-scroll-small::-webkit-scrollbar {
+    width: 8px;
+    position: absolute;
+}
+
+.medist-chat-list-scroll-small::-webkit-scrollbar-thumb {
+    background: #474747;
+    border-radius: 20px;
+}
+
+.medist-chat-list-scroll-small::-webkit-scrollbar-track {
+    background: #D8D8D8;
+    border-radius: 20px;
+}
+
+.medist-chat-unread-badge {
+    content: "";
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: #10BE79;
+    color: white;
+    position: absolute;
+    text-align: center;
+    padding-top: .3rem;
+}
+
+
+/* 
+.medist-chat-background::before {
+    content: "";
+    position: absolute !important;
+    width: 100% !important;
+    height: 83.5% !important;
+    margin-top: 6.5rem;
+    background-image: url('../../static//assets/images/chatBg.png');
+    background-color: rgb(216, 200, 255) !important;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    border-bottom-left-radius: 50px;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+} */
+
+.medist-chat-main-input {
+    background: white;
+    display: flex;
+    width: 100%;
+    border-radius: 35px;
+    align-items: center;
+    height: 55px;
+    margin: 0;
+}
+
+.medist-chat-disactive-box {
+    background: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    border-radius: 35px;
+}
+
+.medist-chat-bootom-box {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: .25rem;
+}
+
+.medist-chat-card {
+    margin-right: -3rem;
+    padding-right: 6rem !important;
+    border-top-left-radius: 50px !important;
+    border-bottom-left-radius: 50px !important;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 70px 0px;
+}
+
+.medist-chat-main-card {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.medist-list-chat-card {
+    z-index: 2;
+    /* position: relative; */
+    background: #f6f6f6;
+    border-radius: 25px;
+}
+
+.medist-chat-toolbar::before {
+    content: "";
+    position: absolute;
+    height: 95px;
+    width: 100%;
+    top: 0;
+    right: 0;
+    background: white;
+    border-top-left-radius: 35px;
+    color: black;
+    box-shadow: rgba(99, 99, 99, 0.09) 0px 2px 70px 0px;
+}
+
+.medist-chat-toolbar-small::after {
+    content: "";
+    position: absolute;
+    height: 95px;
+    width: 100%;
+    top: 0;
+    right: 0;
+    background: white;
+    color: black;
+    box-shadow: rgba(99, 99, 99, 0.09) 0px 2px 70px 0px;
+}
+
+.medist-no-selectedChat {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+.medist-chat-box-white {
+    border-radius: 25px;
+    background-color: white;
+    max-width: 400px;
+    min-width: 80px !important;
+    color: black;
+}
+
+.medist-chat-video {
+    position: absolute;
+}
+
+.medist-add-new-case {
+    max-height: 388px;
+    overflow: hidden;
+    background-color: transparent;
+    color: #474747;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.medist-attach-file {
+    position: absolute;
+    max-height: auto;
+    width: 100%;
+    overflow: hidden;
+    background-color: transparent;
+    color: #474747;
+    z-index: 1;
+    bottom: 0;
+}
+
+.medist-add-new-case-box-shadow {
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px !important;
+}
+
+.medist-open-ticket-input {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px !important;
+}
+
+.medist-upload-file {
+    border-radius: 50px;
+    bottom: .5rem;
+    right: 4.9rem;
+    max-height: 388px;
+    height: auto;
+    width: 850px;
+    overflow: hidden;
+    background-color: white;
+    color: #474747;
+    position: relative;
+    z-index: auto;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px !important;
+}
+
+.medist-box-shadow-input {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.medist-new-case-close {
+    position: absolute;
+    right: .3rem;
+    top: 0;
+    z-index: 4;
+}
+
+.medist-case-text {
+    background-color: #d8c8ff;
+    color: #474747;
+    border: 2px dashed;
+    border-radius: 25px;
+    padding: 1rem;
+    margin: .5rem auto;
+    font-size: 9px;
+    width: 160px;
+    height: 187px;
+}
+
+.medist-attach-file-column {
+    width: 255px;
+    margin: .2rem;
+    height: 120;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+
+.medist-record-voice {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.medist-stop-record-voice {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    bottom: 0;
+}
+
+.medist-recording {
+    width: 100% !important;
+    z-index: 1 !important;
+    height: 55px;
+}
+
+.medist-voice-chat {
+    content: "";
+    position: absolute;
+    background: rgb(131, 90, 222);
+    background: linear-gradient(180deg, rgba(131, 90, 222, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    z-index: 1;
+}
+
+.medist-voice-chat-small {
+    content: "";
+    position: absolute;
+    background: rgb(131, 90, 222);
+    background: linear-gradient(180deg, rgba(131, 90, 222, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    width: 100%;
+    height: 94vh;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 4;
+}
+
+.medist-video-chat {
+    content: "";
+    position: absolute;
+    background: rgb(131, 90, 222);
+    background: linear-gradient(180deg, rgba(131, 90, 222, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    z-index: 1;
+}
+
+.medist-video-chat-small {
+    content: "";
+    position: absolute;
+    background: rgb(131, 90, 222);
+    background: linear-gradient(180deg, rgba(131, 90, 222, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    background-size: 100% 100%;
+    min-width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+.medist-video-chat-content {
+    position: relative;
+    margin-top: 7.5rem;
+    padding-right: 1rem;
+}
+
+.medist-voice-chat-content {
+    position: absolute;
+    bottom: .5rem;
+    left: .5rem;
+    width: 100%;
+}
+
+.medist-voice-chat-avatar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    color: white;
+    font-size: 12px;
+}
+
+.medist-access-btn {
+    background: #108e79 !important;
+    cursor: pointer;
+    width: 134px !important;
+    height: 97px !important;
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    margin-left: .5rem;
+}
+
+.medist-show-all-case {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    left: 0;
+    width: 100%;
+}
+
+.medist-show-all-case-chat {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.medist-show-all-case-video {
+    position: relative;
+    margin-top: 15rem;
+}
+
+.medist-show-all-case-voice-chat {
+    /* padding-right: 4.5rem; */
+    padding-left: .5rem;
+}
+
+.medist-show-all-case-video-chat {
+    padding-right: 4.5rem;
+    padding-left: .5rem;
+}
+
+.medist-chat-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.medist-chat-video-mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+
+.medist-chat-video-small {
+    width: 156px;
+    height: 194px;
+    border-radius: 25px;
+    position: absolute;
+    top: 1.5rem;
+    right: 5rem;
+}
+
+.medist-chat-video-small video {
+    border-radius: 25px;
+    width: 156px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.medist-chat-video-small-small {
+    width: 156px;
+    height: 194px;
+    border-radius: 25px;
+    position: absolute;
+    top: 3.5rem;
+    left: 1.5rem;
+}
+
+.medist-chat-video-small-small video {
+    border-radius: 25px;
+    width: 156px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.medist-video-chat-minus {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1;
+}
+
+.medist-video-call-minimize {
+    background: #10BE79;
+    position: absolute;
+    width: 100%;
+    height: 5vh;
+    left: 0;
+    display: flex;
+    align-items: center;
+    top: 95px;
+    justify-content: space-between;
+    color: white;
+    z-index: 1;
+    padding: auto 1rem;
+}
+
+.medist-video-call-minimize-mobile {
+    background: #10BE79;
+    position: absolute;
+    width: 100%;
+    height: 5vh;
+    left: 0;
+    display: flex;
+    align-items: center;
+    top: 46px;
+    justify-content: space-between;
+    color: white;
+    z-index: 1;
+    padding: auto 1rem;
+}
+
+.medist-rating-direction-ltr {
+    direction: ltr !important;
+}
+
+.medist-image-dialog {
+    object-fit: cover !important;
+    height: 100px !important;
+    position: absolute !important;
+    background-size: cover !important;
+    cursor: pointer;
+}
+
+.medist-image-overly::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.medist-minimize-stream {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    width: 100%;
+}
+
+.v-text-field--rounded>.v-input__control>.v-input__slot {
+    padding: 0 8px !important;
+}
+
+
+/* end chat section */
+
+.medist-right-menu-active-color {
+    background-color: #f4eeff !important;
+    padding: 10% !important;
+}
+
+
+/* @media screen and (min-device-width: 1024px) {
+    .right-menu-scroll {
+        max-height: calc(100vh - 460px);
+        margin-bottom: 60px !important;
+        overflow-y: auto;
+    }
+}
+
+.right-menu-scroll::-webkit-scrollbar {
+    position: absolute;
+    width: 1px;
+}
+
+.right-menu-scroll::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.right-menu-scroll::-webkit-scrollbar-track {
+    background-color: transparent;
+} */
+
+.chevron {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: -55px;
+}
+
+.chevron-user-transactions {
+    margin-top: 30px;
+}
+
+.chevron-user-all-turns {
+    margin-top: 70px;
+}
+
+.chevron-user-dashboard {
+    margin-top: 115px;
+}
+
+.chevron-user-chat {
+    margin-top: -15px;
+}
+
+.chevron-doctor-set-turns {
+    margin-top: 25px;
+}
+
+.chevron-doctor-transactions {
+    margin-top: 70px;
+}
+
+.chevron-doctor-all-turns {
+    margin-top: 115px;
+}
+
+.chevron-doctor-dashboard {
+    margin-top: 160px;
+}
+
+.chevron-doctor-ticket {
+    margin-top: -15px;
+}
+
+.chevron-doctor-chat {
+    margin-top: -15px;
+}
+
+.chevron-admin-all-turn {
+    margin-top: 20px;
+}
+
+.chevron-admin-transaction-bill {
+    margin-top: 60px;
+}
+
+.chevron-admin-journals {
+    margin-top: 110px;
+}
+
+.chevron-admin-doctor-list {
+    margin-top: 70px;
+}
+
+.chevron-admin-doctor-define {
+    margin-top: 110px;
+}
+
+.chevron-admin-expert-define {
+    margin-top: 165px;
+}
+
+.chevron-admin-unit-pricing {
+    margin-top: 205px;
+}
+
+.chevron-admin-patient-list {
+    margin-top: 110px;
+}
+
+.chevron-admin-patient-manual-turn {
+    margin-top: 155px;
+}
+
+.chevron-admin-employee {
+    margin-top: -20px;
+}
+
+.chevron-admin-experiment-confirm {
+    margin-top: -20px;
+}
+
+.chevron-admin-transactions-employe-doctor {
+    margin-top: 240px;
+}
+
+.chevron-admin-transaction-gift-card {
+    margin-top: 295px;
+}
+
+.chevron-admin-chat {
+    margin-top: -15px;
+}
+
+.chevron-admin-ticket {
+    margin-top: -20px;
+}
+
+.chevron-admin-comments {
+    margin-top: -20px;
+}
+
+@media screen and (min-device-width:1366.1px) {
+    .chevron {
+        margin-left: -63px;
+    }
+}
+
+@media screen and (min-device-width:1024px) and (max-device-width:1366px) {
+    .chevron {
+        margin-left: -55px;
+    }
+}
+
+@media screen and (min-device-width:768px) and (max-device-width:1023.9px) {
+    .chevron {
+        margin-left: -150px;
+        left: unset;
+        right: 0;
+        width: 50px !important;
+        height: 60px !important;
+        margin-right: 80px;
+    }
+    .chevron-user-transactions {
+        margin-top: 65px;
+    }
+    .chevron-user-all-turns {
+        margin-top: 110px;
+    }
+    .chevron-user-dashboard {
+        margin-top: 155px;
+    }
+    .chevron-user-chat {
+        margin-top: -10px;
+        margin-right: 72px;
+    }
+    .chevron-doctor-set-turns {
+        margin-top: 60px;
+    }
+    .chevron-doctor-transactions {
+        margin-top: 110px;
+    }
+    .chevron-doctor-all-turns {
+        margin-top: 150px;
+    }
+    .chevron-doctor-dashboard {
+        margin-top: 195px;
+    }
+    .chevron-doctor-ticket {
+        margin-top: -10px;
+        margin-right: 72px;
+    }
+    .chevron-doctor-chat {
+        margin-right: 72px;
+        margin-top: -15px;
+    }
+    .chevron-admin-all-turn {
+        margin-top: 65px;
+    }
+    .chevron-admin-transaction-bill {
+        margin-top: 105px;
+    }
+    .chevron-admin-journals {
+        margin-top: 150px;
+    }
+    .chevron-admin-doctor-list {
+        margin-top: 105px;
+    }
+    .chevron-admin-doctor-define {
+        margin-top: 155px;
+    }
+    .chevron-admin-expert-define {
+        margin-top: 195px;
+        margin-right: 72px;
+    }
+    .chevron-admin-unit-pricing {
+        margin-top: 235px;
+        margin-right: 75px;
+    }
+    .chevron-admin-patient-list {
+        margin-top: 145px;
+    }
+    .chevron-admin-patient-manual-turn {
+        margin-top: 190px;
+    }
+    .chevron-admin-employee {
+        margin-top: -10px;
+        margin-right: 70px;
+    }
+    .chevron-admin-experiment-confirm {
+        margin-top: -5px;
+        margin-right: 70px;
+    }
+    .chevron-admin-transactions-employe-doctor {
+        margin-top: 280px;
+    }
+    .chevron-admin-transaction-gift-card {
+        margin-top: 325px;
+    }
+    .chevron-admin-chat {
+        margin-top: -5px;
+        margin-right: 70px;
+    }
+    .chevron-admin-ticket {
+        margin-top: -10px;
+        margin-right: 70px;
+    }
+    .chevron-admin-comments {
+        margin-top: -10px;
+        margin-right: 70px;
+    }
+}
+
+@media screen and (max-device-width:767.9px) {
+    .chevron {
+        display: none;
+    }
+}
